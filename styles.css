@@ -13,7 +13,6 @@ body {
   width: 70%;
   height: 70vh;
   overflow: hidden;
-  /* align-items: center; */
 }
 
 .dash {
@@ -34,9 +33,14 @@ body {
 }
 
 .containerBanner {
-  width: 100%;
+  /* width: 100%;
   height: 30vh;
-  overflow: hidden;
+  overflow: hidden; */
+  display: flex;
+  justify-content: center;
 }
 
-/* border: 2px solid red; */
+.containerBanner img {
+  /* border: 2px solid red; */
+  width: 100%;
+}
