@@ -1,5 +1,5 @@
 body {
-  //background-color: black;
+  /* background-color: black; */
   margin: 0 auto;
 }
 
@@ -15,10 +15,12 @@ body {
 }
 
 .dash {
-  margin-top: -2px;
+  /* margin-top: -2px;
   margin-left: -202px;
   width: 150%;
-  height: 114%;
+  height: 114%; */
+  width: 100%;
+  height: 100%;
 }
 
 .site1 {
@@ -41,4 +43,4 @@ body {
   zoom: 0.8;
 }
 
-border: 2px solid red;
+/* border: 2px solid red; */
