@@ -41,15 +41,27 @@ body {
   zoom: 0.65;
 }
 
-.containerBanner {
-  /* width: 100%;
-  height: 30vh;
-  overflow: hidden; */
+.bannerMaior {
   display: flex;
   justify-content: center;
 }
 
-.containerBanner img {
-  /* border: 1px solid red; */
+.bannerMaior img {
   width: 100%;
+}
+
+.bannerMenor {
+  /* border: 1px solid red; */
+  display: flex;
+  /* justify-content: center; */
+}
+
+.bannerMenor img {
+  width: 70%;
+}
+
+.youtube {
+  width: 29.5%;
+  height: 29.2vh;
+  border-radius: 15px;
 }
