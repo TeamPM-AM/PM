@@ -58,12 +58,7 @@ body {
 }
 
 .card {
+  width: 495px;
   border-radius: 15px;
   box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.3);
-}
-
-.youtube {
-  width: 492px;
-  height: 257px;
-  border-radius: 15px;
 }
