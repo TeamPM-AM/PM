@@ -102,7 +102,7 @@ body {
     radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent),
     radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
   background-size: 650px 650px;
-  animation: caineve 10s linear infinite;
+  animation: caineve 15s linear infinite;
   content: "";
   pointer-events: none;
 }
@@ -111,8 +111,8 @@ body {
   margin-left: -250px;
   opacity: 0.5;
   filter: blur(2px);
-  animation-duration: 6s;
-  animation-direction: reverse;
+  animation-duration: 20s;
+  /* animation-direction: reverse; */
   pointer-events: none;
 }
 
@@ -120,8 +120,8 @@ body {
   margin-left: -350px;
   opacity: 0.7;
   filter: blur(1px);
-  animation-duration: 9s;
-  animation-direction: reverse;
+  animation-duration: 10s;
+  /* animation-direction: reverse; */
   pointer-events: none;
 }
 
