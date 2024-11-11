@@ -17,13 +17,16 @@
 
 <body background="img/wallpaper.png">
 
+    <!-- efeito neve -->
     <div class="containerNeve">
         <div class="neve"></div>
     </div>
 
+    <!-- parte das informações -->
     <div class="containerInfo">
 
-        <div class="containerDash">
+        <!-- para alterar o dashboard, substituir a url em "src" -->
+        <div class="containerDash"> 
             <div class="window">
                 <iframe class="dash" frameborder="0" allowFullScreen="true"
                     src="https://app.powerbi.com/view?r=eyJrIjoiODk3ZjVkZmYtNGQ2ZC00Y2U5LTlkODEtNTA1NDQ0ZjdlMmQ3IiwidCI6ImMwZmUxZmYwLTg1YjQtNGZlNC1iYzk3LTM4ZmFkNDk1YjkxNiIsImMiOjl9">
@@ -31,6 +34,7 @@
             </div>
         </div>
 
+        <!-- para alterar o site, substituir a url em "src", no entanto será necessário ajustar a class "site" no arquivo style.css -->
         <div class="containerSite">
             <div class="window">
                 <iframe class="site" frameborder="0" allowFullScreen="true" scrolling="no"
@@ -41,12 +45,15 @@
 
     </div>
 
+    <!-- parte das imagens -->
     <div class="containerCards">
 
         <img src="img/card1.png" class="card">
         <img src="img/card2.png" class="card">
         <img src="img/card3.png" class="card">
 
+        <!-- para exibir este card, basta o remover do comentário do iframe e comentar um dos cards anteriores -->
+        <!-- para alterar a playlist do youtube, substituir a url em "src" -->
         <!-- <iframe class="card"
             src="https://www.youtube.com/embed/videoseries?si=uaUajJBS2sLkx1nw&amp;list=PLBoRFwhtdyLr3Rg1fsE4YN7K_ZYVfj7DN"
             title="YouTube video player" frameborder="0"
