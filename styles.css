@@ -42,17 +42,18 @@ body {
   align-items: center;
 }
 
-.siteCieam {
+.site1 {
   width: 100%;
   margin-top: -145px;
   height: 150%;
   zoom: 0.68;
 }
-.siteRevistahigh {
-  width: 100%;
+.site2 {
+  width: 1100%;
   height: 500%;
-  margin-top: -505px;
-  zoom: 1.1;
+  margin-left: -2330px;
+  margin-top: -620px;
+  zoom: 1.2;
 }
 
 .containerCards {
