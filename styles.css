@@ -50,9 +50,9 @@ body {
 .site2 {
   width: 1600px;
   height: 500%;
-  margin-left: -1050px;
-  margin-top: -480px;
-  zoom: 1.5;
+  margin-left: -1040px;
+  margin-top: -475px;
+  zoom: 1.40;
 }
 
 .containerCards {
@@ -64,7 +64,7 @@ body {
 }
 
 .card {
-  width: 350px;
+  width: 400px;
   border-radius: 15px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
