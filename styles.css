@@ -1,142 +1,140 @@
 body {
-  background-size: 100% 100vh;
-  margin: 0 auto;
+    background-size: 100% 100vh;
+    margin: 0 auto;
 }
 
 .containerInfo {
-  overflow: hidden;
-  width: 70%;
-  height: 100vh;
+    overflow: hidden;
+    width: 70%;
+    height: 100vh;
 }
 
 .window {
-  overflow: hidden;
-  width: 95%;
-  height: 95%;
-  border-radius: 15px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .containerDash {
-  overflow: hidden;
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dash {
-  width: 100%;
-  height: 108.5%;
+    width: 100%;
+    height: 108.5%;
 }
 
 .containerSite {
-  overflow: hidden;
-  width: 30%;
-  height: 100vh;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
+    overflow: hidden;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
-.site1 {
-  width: 100%;
-  margin-top: -145px;
-  height: 150%;
-  zoom: 0.68;
-}
-.site2 {
-  width: 1600px;
-  height: 500%;
-  margin-left: -1040px;
-  margin-top: -475px;
-  zoom: 1.40;
+.site {
+    width: 1600px;
+    height: 500%;
+    margin-left: -1040px;
+    margin-top: -475px;
+    zoom: 1.40;
 }
 
 .containerCards {
-  width: 100%;
-  height: 30vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .card {
-  width: 400px;
-  border-radius: 15px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 *,
 *:after,
 *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .containerNeve {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center bottom;
-  overflow: hidden;
-  position: fixed;
-  z-index: 999;
-  pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center bottom;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
 }
 
 .neve,
 .neve:before,
 .neve:after {
-  position: fixed;
-  top: -650px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image:
-    radial-gradient(4px 4px at 100px 50px, #fff, transparent),
-    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
-    radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent),
-    radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent),
-    radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent),
-    radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent),
-    radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent),
-    radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent),
-    radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
-  background-size: 650px 650px;
-  animation: caineve 15s linear infinite; /* eram 10s */
-  content: "";
-  pointer-events: none;
+    position: fixed;
+    top: -650px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+        radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+        radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent),
+        radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent),
+        radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent),
+        radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent),
+        radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent),
+        radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent),
+        radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+    background-size: 650px 650px;
+    animation: caineve 15s linear infinite;
+    /* eram 10s */
+    content: "";
+    pointer-events: none;
 }
 
 .neve:after {
-  margin-left: -250px;
-  opacity: 0.5;
-  filter: blur(2px);
-  animation-duration: 20s; /* eram 6s */
-  /* animation-direction: reverse; */
-  pointer-events: none;
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-duration: 20s;
+    /* eram 6s */
+    /* animation-direction: reverse; */
+    pointer-events: none;
 }
 
 .neve:before {
-  margin-left: -350px;
-  opacity: 0.7;
-  filter: blur(1px);
-  animation-duration: 10s; /* eram 9s */
-  /* animation-direction: reverse; */
-  pointer-events: none;
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(1px);
+    animation-duration: 10s;
+    /* eram 9s */
+    /* animation-direction: reverse; */
+    pointer-events: none;
 }
 
 @keyframes caineve {
-  from {
-    transform: translateY(0px) translateX(0px);
-    pointer-events: none;
-  }
-  to {
-    transform: translateY(650px) translateX(200px);
-    pointer-events: none;
-  }
+    from {
+        transform: translateY(0px) translateX(0px);
+        pointer-events: none;
+    }
+
+    to {
+        transform: translateY(650px) translateX(200px);
+        pointer-events: none;
+    }
 }
