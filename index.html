@@ -17,8 +17,64 @@
 
 <body background="img/wallpaper.png">
 
-    <div class="containerNeve">
+    <!-- <div class="containerNeve">
         <div class="neve"></div>
+    </div> -->
+
+    <div>
+
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+        <script>
+
+document.addEventListener("DOMContentLoaded", () => {
+            function startConfettiLoop() {
+                var duration = 5 * 1000; // Duração de cada efeito (5 segundos)
+                var animationEnd = Date.now() + duration;
+                var skew = 1;
+
+                function randomInRange(min, max) {
+                    return Math.random() * (max - min) + min;
+                }
+
+                function frame() {
+                    var timeLeft = animationEnd - Date.now();
+                    var ticks = Math.max(200, 500 * (timeLeft / duration));
+                    skew = Math.max(0.8, skew - 0.001);
+
+                    confetti({
+                        particleCount: 1,
+                        startVelocity: 0,
+                        ticks: ticks,
+                        origin: {
+                            x: Math.random(),
+                            // Since particles fall down, skew start toward the top
+                            y: (Math.random() * skew) - 0.2
+                        },
+                        colors: ['#b88210'],
+                        shapes: ['circle'],
+                        gravity: randomInRange(0.4, 0.6),
+                        scalar: randomInRange(0.4, 1),
+                        drift: randomInRange(-0.4, 0.4)
+                    });
+
+                    if (timeLeft > 0) {
+                        requestAnimationFrame(frame);
+                    } else {
+                        // Reinicia o efeito após um intervalo (1 segundo de pausa)
+                        setTimeout(startConfettiLoop, 1000);
+                    }
+                }
+
+                frame();
+            }
+
+            // Inicia o loop contínuo
+            startConfettiLoop();
+        });
+
+        </script>
+
     </div>
 
     <div style="display: flex">
