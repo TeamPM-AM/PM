@@ -1,48 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="pt-Br">
-
 <head>
     <meta name="author" content="Ageu Nunes">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="3600">
-
     <link rel="icon" href="img/logo.png">
     <title>Team PM - Painel Informativo</title>
     <meta name="description" content="Informações" />
-
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body background="img/wallpaper.png">
-
-    <!-- <div class="containerNeve">
-        <div class="neve"></div>
-    </div> -->
-
     <div style="display: flex">
-
         <div class="containerInfo">
-
             <div class="containerDash">
                 <div class="window">
                     <iframe class="dash" frameborder="0" allowFullScreen="true"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiNjk5NTQzMDAtZWM3Mi00NWYwLTlmMGItNjY4MjBmNWZjYmU2IiwidCI6ImMwZmUxZmYwLTg1YjQtNGZlNC1iYzk3LTM4ZmFkNDk1YjkxNiIsImMiOjl9&pageName=d7e7fdabbbe7e5996916">
-                </iframe>
+                        src="https://app.powerbi.com/view?r=eyJrIjoiNjk5NTQzMDAtZWM3Mi00NWYwLTlmMGItNjY4MjBmNWZjYmU2IiwidCI6ImMwZmUxZmYwLTg1YjQtNGZlNC1iYzk3LTM4ZmFkNDk1YjkxNiIsImMiOjl9&pageName=d7e7fdabbbe7e5996916">
+                    </iframe>
                 </div>
             </div>
-
             <div class="containerCards">
-
                 <img src="img/card1.png" class="card">
                 <img src="img/card2.png" class="card">
                 <img src="img/card3.png" class="card">
-
             </div>
-
         </div>
-
         <div class="containerSite">
             <div class="window">
                 <iframe class="site" frameborder="0" allowFullScreen="true" scrolling="no"
@@ -50,65 +33,6 @@
                 </iframe>
             </div>
         </div>
-
     </div>
-
-    <!-- <div>
-
-        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-
-        <script>
-
-            document.addEventListener("DOMContentLoaded", () => {
-                function startConfettiLoop() {
-                    var duration = 5 * 1000; // Duração de cada efeito (5 segundos)
-                    var animationEnd = Date.now() + duration;
-                    var skew = 1;
-
-                    function randomInRange(min, max) {
-                        return Math.random() * (max - min) + min;
-                    }
-
-                    function frame() {
-                        var timeLeft = animationEnd - Date.now();
-                        var ticks = Math.max(200, 500 * (timeLeft / duration));
-                        skew = Math.max(0.8, skew - 0.001);
-
-                        confetti({
-                            particleCount: 1,
-                            startVelocity: 0,
-                            ticks: ticks,
-                            origin: {
-                                x: Math.random(),
-                                // Since particles fall down, skew start toward the top
-                                y: (Math.random() * skew) - 0.2
-                            },
-                            colors: ['#b88210'],
-                            shapes: ['circle'],
-                            gravity: randomInRange(0.4, 0.6),
-                            scalar: randomInRange(0.4, 1),
-                            drift: randomInRange(-0.4, 0.4)
-                        });
-
-                        if (timeLeft > 0) {
-                            requestAnimationFrame(frame);
-                        } else {
-                            // Reinicia o efeito após um intervalo (1 segundo de pausa)
-                            setTimeout(startConfettiLoop, 1000);
-                        }
-                    }
-
-                    frame();
-                }
-
-                // Inicia o loop contínuo
-                startConfettiLoop();
-            });
-
-        </script>
-
-    </div> -->
-
 </body>
-
 </html>

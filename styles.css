@@ -1,68 +1,4 @@
-body {
-    background-size: 100% 100vh;
-    margin: 0 auto;
-}
-
-.containerInfo {
-    overflow: hidden;
-    width: 70%;
-    height: 100vh;
-}
-
-.window {
-    overflow: hidden;
-    width: 95%;
-    height: 95%;
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-.containerDash {
-    overflow: hidden;
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dash {
-    margin-top: -3px;
-    width: 100%;
-    height: 109.5%;
-}
-
-.containerSite {
-    overflow: hidden;
-    width: 30%;
-    height: 100vh;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-.site {
-    width: 1600px;
-    height: 500%;
-    margin-left: -1040px;
-    margin-top: -475px;
-    zoom: 1.40;
-}
-
-.containerCards {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.card {
-    width: 400px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
+/* Reset e Configurações Gerais */
 *,
 *:after,
 *:before {
@@ -72,6 +8,91 @@ body {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 auto;
+    background: url('img/wallpaper.png') no-repeat center center fixed;
+    background-size: 100% 100vh; /* Mantido do seu CSS */
+    font-family: Arial, sans-serif; /* Adicionado para consistência */
+}
+
+/* Estruturas Principais */
+div[style="display: flex"] {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.containerInfo {
+    overflow: hidden;
+    width: 70%; /* Mantido do seu CSS */
+    height: 100vh; /* Mantido do seu CSS */
+}
+
+.containerSite {
+    overflow: hidden;
+    width: 30%; /* Mantido do seu CSS */
+    height: 100vh; /* Mantido do seu CSS */
+    display: flex;
+    align-items: center; /* Mantido do seu CSS */
+}
+
+/* Containers de Dash e Site */
+.containerDash {
+    overflow: hidden;
+    width: 100%; /* Mantido do seu CSS */
+    height: 70vh; /* Mantido do seu CSS */
+    display: flex;
+    justify-content: center; /* Mantido do seu CSS */
+    align-items: center; /* Mantido do seu CSS */
+}
+
+.containerSite .window {
+    overflow: hidden;
+    width: 95%; /* Mantido do seu CSS */
+    height: 95%; /* Mantido do seu CSS */
+    border-radius: 15px; /* Mantido do seu CSS */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Mantido do seu CSS */
+}
+
+.window {
+    overflow: hidden;
+    width: 95%; /* Mantido do seu CSS */
+    height: 95%; /* Mantido do seu CSS */
+    border-radius: 15px; /* Mantido do seu CSS */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Mantido do seu CSS */
+}
+
+/* Estilização dos Iframes */
+.dash {
+    margin-top: -3px; /* Mantido do seu CSS */
+    width: 100%; /* Mantido do seu CSS */
+    height: 109.5%; /* Mantido do seu CSS */
+}
+
+.site {
+    width: 1600px; /* Mantido do seu CSS */
+    height: 500%; /* Mantido do seu CSS */
+    margin-left: -1040px; /* Mantido do seu CSS */
+    margin-top: -475px; /* Mantido do seu CSS */
+    zoom: 1.40; /* Mantido do seu CSS */
+}
+
+/* Cards */
+.containerCards {
+    width: 100%; /* Mantido do seu CSS */
+    height: 30vh; /* Mantido do seu CSS */
+    display: flex;
+    justify-content: space-evenly; /* Mantido do seu CSS */
+    align-items: center; /* Mantido do seu CSS */
+}
+
+.card {
+    width: 400px; /* Mantido do seu CSS */
+    border-radius: 15px; /* Mantido do seu CSS */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Mantido do seu CSS */
+}
+
+/* Efeito de Neve (Comentado no HTML original, mas mantido no CSS) */
 .containerNeve {
     width: 100%;
     height: 100vh;
@@ -103,7 +124,6 @@ body {
         radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
     background-size: 650px 650px;
     animation: caineve 15s linear infinite;
-    /* eram 10s */
     content: "";
     pointer-events: none;
 }
@@ -113,8 +133,6 @@ body {
     opacity: 0.5;
     filter: blur(2px);
     animation-duration: 20s;
-    /* eram 6s */
-    /* animation-direction: reverse; */
     pointer-events: none;
 }
 
@@ -123,8 +141,6 @@ body {
     opacity: 0.7;
     filter: blur(1px);
     animation-duration: 10s;
-    /* eram 9s */
-    /* animation-direction: reverse; */
     pointer-events: none;
 }
 
@@ -133,9 +149,28 @@ body {
         transform: translateY(0px) translateX(0px);
         pointer-events: none;
     }
-
     to {
         transform: translateY(650px) translateX(200px);
         pointer-events: none;
+    }
+}
+
+/* Adição de Responsividade (sem conflito com seus estilos) */
+@media (max-width: 768px) {
+    div[style="display: flex"] {
+        flex-direction: column;
+    }
+    .containerInfo, .containerSite {
+        width: 100%;
+    }
+    .card {
+        width: 45%; /* Ajuste para telas menores */
+    }
+    .site {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        zoom: 1; /* Reduz zoom em telas menores */
     }
 }
