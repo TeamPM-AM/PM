@@ -231,3 +231,135 @@ div[style="display: flex"] {
     color: #555;
     font-size: 14px;
 }
+/* ===== AJUSTE FINAL DO PAINEL ===== */
+
+.containerInfo {
+    width: 70%;
+}
+
+.containerSite {
+    width: 30%;
+    display: block;
+}
+
+.noticias-intranet {
+    width: 100%;
+    height: 430px;
+    padding: 25px 30px;
+    overflow: hidden;
+}
+
+.containerSite .window {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+}
+
+.containerSite .site {
+    display: block;
+    width: 100%;
+    height: 430px;
+    margin: 0;
+    border: 0;
+    zoom: 1;
+}
+
+.containerCards {
+    width: 100%;
+}
+/* ===== PAINEL NOTÍCIAS DA AVIAÇÃO ===== */
+
+.painel-aviacao {
+    width: 100%;
+    height: 430px;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff, #eef5fa);
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.painel-aviacao span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00a4d6;
+}
+
+.painel-aviacao h1 {
+    margin: 12px 0;
+    font-size: 30px;
+    color: #17365d;
+}
+
+.painel-aviacao p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    max-width: 500px;
+}
+
+.btn-aviacao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #17365d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-aviacao:hover {
+    opacity: 0.85;
+}/* ===== CORREÇÃO DO PAINEL DIREITO ===== */
+
+.containerSite {
+    display: block !important;
+    width: 30% !important;
+    height: 100vh !important;
+}
+
+.containerSite .window {
+    display: block !important;
+    width: 100% !important;
+    height: 430px !important;
+    overflow: visible !important;
+}
+
+.painel-aviacao {
+    display: block !important;
+    width: 100% !important;
+    height: 430px !important;
+    padding: 35px !important;
+    box-sizing: border-box !important;
+    background: linear-gradient(135deg, #ffffff, #eef5fa) !important;
+    border-radius: 14px !important;
+}
+
+.painel-aviacao span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00a4d6;
+}
+
+.painel-aviacao h1 {
+    margin: 12px 0;
+    font-size: 30px;
+    color: #17365d;
+}
+
+.painel-aviacao p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.btn-aviacao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #17365d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
