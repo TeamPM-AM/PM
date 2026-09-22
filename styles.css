@@ -1,365 +1,496 @@
-/* Reset e Configurações Gerais */
+/* ========================================================= */
+/* RESET */
+/* ========================================================= */
+
 *,
-*:after,
-*:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
+*:before,
+*:after {
     box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
 }
 
 body {
-    margin: 0 auto;
-    background: url('img/wallpaper.png') no-repeat center center fixed;
-    background-size: 100% 100vh; /* Mantido do seu CSS */
-    font-family: Arial, sans-serif; /* Adicionado para consistência */
-}
-
-/* Estruturas Principais */
-div[style="display: flex"] {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-}
-
-.containerInfo {
-    overflow: hidden;
-    width: 70%; /* Mantido do seu CSS */
-    height: 100vh; /* Mantido do seu CSS */
-}
-
-.containerSite {
-    overflow: hidden;
-    width: 30%; /* Mantido do seu CSS */
-    height: 100vh; /* Mantido do seu CSS */
-    display: flex;
-    align-items: center; /* Mantido do seu CSS */
-}
-
-/* Containers de Dash e Site */
-.containerDash {
-    overflow: hidden;
-    width: 100%; /* Mantido do seu CSS */
-    height: 70vh; /* Mantido do seu CSS */
-    display: flex;
-    justify-content: center; /* Mantido do seu CSS */
-    align-items: center; /* Mantido do seu CSS */
-}
-
-.containerSite .window {
-    overflow: hidden;
-    width: 95%; /* Mantido do seu CSS */
-    height: 95%; /* Mantido do seu CSS */
-    border-radius: 15px; /* Mantido do seu CSS */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Mantido do seu CSS */
-}
-
-.window {
-    overflow: hidden;
-    width: 95%; /* Mantido do seu CSS */
-    height: 95%; /* Mantido do seu CSS */
-    border-radius: 15px; /* Mantido do seu CSS */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Mantido do seu CSS */
-}
-
-/* Estilização dos Iframes */
-.dash {
-    margin-top: -3px; /* Mantido do seu CSS */
-    width: 100%; /* Mantido do seu CSS */
-    height: 109.5%; /* Mantido do seu CSS */
-}
-
-.site {
-    width: 1600px; /* Mantido do seu CSS */
-    height: 500%; /* Mantido do seu CSS */
-    margin-left: -1040px; /* Mantido do seu CSS */
-    margin-top: -475px; /* Mantido do seu CSS */
-    zoom: 1.40; /* Mantido do seu CSS */
-}
-
-/* Cards */
-.containerCards {
-    width: 100%; /* Mantido do seu CSS */
-    height: 30vh; /* Mantido do seu CSS */
-    display: flex;
-    justify-content: space-evenly; /* Mantido do seu CSS */
-    align-items: center; /* Mantido do seu CSS */
-}
-
-.card {
-    width: 400px; /* Mantido do seu CSS */
-    border-radius: 15px; /* Mantido do seu CSS */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Mantido do seu CSS */
-}
-
-/* Efeito de Neve (Comentado no HTML original, mas mantido no CSS) */
-.containerNeve {
-    width: 100%;
-    height: 100vh;
+    background: url("img/wallpaper.png") no-repeat center center fixed;
     background-size: cover;
-    background-position: center bottom;
-    overflow: hidden;
-    position: fixed;
-    z-index: 999;
-    pointer-events: none;
+    font-family: Arial, sans-serif;
 }
 
-.neve,
-.neve:before,
-.neve:after {
-    position: fixed;
-    top: -650px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-        radial-gradient(4px 4px at 100px 50px, #fff, transparent),
-        radial-gradient(6px 6px at 200px 150px, #fff, transparent),
-        radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent),
-        radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent),
-        radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent),
-        radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent),
-        radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent),
-        radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent),
-        radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
-    background-size: 650px 650px;
-    animation: caineve 15s linear infinite;
-    content: "";
-    pointer-events: none;
-}
 
-.neve:after {
-    margin-left: -250px;
-    opacity: 0.5;
-    filter: blur(2px);
-    animation-duration: 20s;
-    pointer-events: none;
-}
+/* ========================================================= */
+/* ESTRUTURA PRINCIPAL */
+/* ========================================================= */
 
-.neve:before {
-    margin-left: -350px;
-    opacity: 0.7;
-    filter: blur(1px);
-    animation-duration: 10s;
-    pointer-events: none;
-}
-
-@keyframes caineve {
-    from {
-        transform: translateY(0px) translateX(0px);
-        pointer-events: none;
-    }
-    to {
-        transform: translateY(650px) translateX(200px);
-        pointer-events: none;
-    }
-}
-
-/* Adição de Responsividade (sem conflito com seus estilos) */
-@media (max-width: 768px) {
-    div[style="display: flex"] {
-        flex-direction: column;
-    }
-    .containerInfo, .containerSite {
-        width: 100%;
-    }
-    .card {
-        width: 45%; /* Ajuste para telas menores */
-    }
-    .site {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-top: 0;
-        zoom: 1; /* Reduz zoom em telas menores */
-    }
-}/* ===== PAINEL DE NOTÍCIAS DA INTRANET ===== */
-
-.noticias-intranet {
+div[style="display: flex;"] {
+    display: flex;
     width: 100%;
-    height: 600px;
-    padding: 35px;
-    background: linear-gradient(135deg, #ffffff, #eef5fa);
-    overflow: hidden;
+    min-height: 100vh;
 }
 
-.noticias-intranet .titulo-noticias {
-    margin-bottom: 25px;
-}
 
-.noticias-intranet .titulo-noticias span {
-    font-size: 14px;
-    font-weight: bold;
-    color: #0087b8;
-    letter-spacing: 2px;
-}
-
-.noticias-intranet .titulo-noticias h2 {
-    margin: 6px 0;
-    font-size: 32px;
-    color: #17365d;
-}
-
-.noticias-intranet .titulo-noticias p {
-    margin: 0;
-    color: #666;
-    font-size: 16px;
-}
-
-.noticias-intranet .noticia {
-    background: white;
-    border-radius: 14px;
-    padding: 18px 22px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
-
-.noticias-intranet .noticia span {
-    font-size: 12px;
-    font-weight: bold;
-    color: #00a4d6;
-}
-
-.noticias-intranet .noticia h2 {
-    margin: 5px 0;
-    color: #17365d;
-    font-size: 20px;
-}
-
-.noticias-intranet .noticia p {
-    margin: 0;
-    color: #555;
-    font-size: 14px;
-}
-/* ===== AJUSTE FINAL DO PAINEL ===== */
+/* ========================================================= */
+/* LADO ESQUERDO */
+/* ========================================================= */
 
 .containerInfo {
     width: 70%;
-}
-
-.containerSite {
-    width: 30%;
-    display: block;
-}
-
-.noticias-intranet {
-    width: 100%;
-    height: 430px;
-    padding: 25px 30px;
+    min-height: 100vh;
     overflow: hidden;
 }
 
-.containerSite .window {
+
+/* ========================================================= */
+/* ÁREA DO POWER BI */
+/* ========================================================= */
+
+.containerDash {
     width: 100%;
-    height: 430px;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     overflow: hidden;
 }
 
-.containerSite .site {
-    display: block;
-    width: 100%;
-    height: 430px;
-    margin: 0;
-    border: 0;
-    zoom: 1;
+
+/* JANELA DO DASHBOARD */
+
+.containerDash .window {
+    width: 95%;
+    height: 95%;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        3px 3px 10px
+        rgba(0, 0, 0, 0.20);
 }
+
+
+/* DASHBOARD */
+
+.dashboard-powerbi {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* ========================================================= */
+/* POWER BI */
+/* ========================================================= */
+
+.powerbi-container {
+    width: 100%;
+
+    flex: 1;
+
+    min-height: 0;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+.powerbi-container iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    background: #ffffff;
+}
+
+
+/* ========================================================= */
+/* BOTÃO ABRIR PAINEL COMPLETO */
+/* ========================================================= */
+
+.abrir-painel {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 8px 15px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.abrir-painel a {
+    display: inline-block;
+
+    padding: 9px 17px;
+
+    background: #17365d;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    border-radius: 7px;
+
+    transition: 0.2s;
+}
+
+
+.abrir-painel a:hover {
+    opacity: 0.88;
+
+    transform: translateY(-1px);
+}
+
+
+/* ========================================================= */
+/* CARDS INFERIORES */
+/* ========================================================= */
 
 .containerCards {
     width: 100%;
+    height: 30vh;
+
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 10px 20px;
 }
-/* ===== PAINEL NOTÍCIAS DA AVIAÇÃO ===== */
+
+
+.card {
+    width: 32%;
+    max-width: 400px;
+
+    height: auto;
+
+    border-radius: 15px;
+
+    box-shadow:
+        3px 3px 8px
+        rgba(0, 0, 0, 0.20);
+}
+
+
+/* ========================================================= */
+/* LADO DIREITO */
+/* ========================================================= */
+
+.containerSite {
+    width: 30%;
+
+    min-height: 100vh;
+
+    padding: 18px 15px 18px 0;
+
+    overflow: visible;
+}
+
+
+/* JANELA DIREITA */
+
+.containerSite .window {
+    width: 100%;
+    height: auto;
+
+    overflow: visible;
+
+    border-radius: 15px;
+
+    box-shadow:
+        3px 3px 10px
+        rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========================================================= */
+/* PAINEL DE NOTÍCIAS */
+/* ========================================================= */
 
 .painel-aviacao {
     width: 100%;
-    height: 430px;
-    padding: 40px;
-    background: linear-gradient(135deg, #ffffff, #eef5fa);
+
+    min-height: 430px;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eef5fa
+        );
+
+    border-radius: 15px;
+
+    overflow: visible;
+}
+
+
+/* ========================================================= */
+/* CABEÇALHO NOTÍCIAS */
+/* ========================================================= */
+
+.aviacao-cabecalho {
+    margin-bottom: 20px;
+}
+
+
+.aviacao-cabecalho span {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #00a4d6;
+
+    letter-spacing: 1px;
+}
+
+
+.aviacao-cabecalho h1 {
+    margin: 8px 0;
+
+    font-size: 28px;
+
+    color: #17365d;
+}
+
+
+.aviacao-cabecalho p {
+    margin: 0;
+
+    color: #555555;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================================= */
+/* LISTA DE NOTÍCIAS */
+/* ========================================================= */
+
+.lista-noticias {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* CARD DE NOTÍCIA */
+
+.noticia-aviacao {
+    display: block;
+
+    padding: 15px 17px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+
+.noticia-aviacao:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 16px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+.noticia-aviacao span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #00a4d6;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.noticia-aviacao h3 {
+    margin: 0 0 6px 0;
+
+    color: #17365d;
+
+    font-size: 16px;
+
+    line-height: 1.25;
+}
+
+
+.noticia-aviacao p {
+    margin: 0 0 7px 0;
+
+    color: #555555;
+
+    font-size: 12px;
+
+    line-height: 1.35;
+}
+
+
+.noticia-aviacao strong {
+    color: #00a4d6;
+
+    font-size: 11px;
+}
+
+
+/* ========================================================= */
+/* VÍDEO TUCANDEIRA */
+/* ========================================================= */
+
+.video-tucandeira {
+    display: block;
+
+    width: 100%;
+
+    height: 500px;
+
+    margin-top: 20px;
+
+    background: #000000;
+
     border-radius: 14px;
-    box-sizing: border-box;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.10);
 }
 
-.painel-aviacao span {
-    font-size: 14px;
-    font-weight: bold;
-    color: #00a4d6;
+
+.video-tucandeira video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border: 0;
 }
 
-.painel-aviacao h1 {
-    margin: 12px 0;
-    font-size: 30px;
-    color: #17365d;
+
+/* ========================================================= */
+/* RESPONSIVIDADE */
+/* ========================================================= */
+
+@media (max-width: 1000px) {
+
+    div[style="display: flex;"] {
+        flex-direction: column;
+    }
+
+
+    .containerInfo {
+        width: 100%;
+    }
+
+
+    .containerSite {
+        width: 100%;
+
+        padding: 20px;
+    }
+
+
+    .containerDash {
+        height: 65vh;
+    }
+
+
+    .containerCards {
+        height: auto;
+
+        flex-wrap: wrap;
+
+        padding: 20px;
+    }
+
+
+    .card {
+        width: 45%;
+    }
+
 }
 
-.painel-aviacao p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555;
-    max-width: 500px;
-}
 
-.btn-aviacao {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 22px;
-    background: #17365d;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
+@media (max-width: 650px) {
 
-.btn-aviacao:hover {
-    opacity: 0.85;
-}/* ===== CORREÇÃO DO PAINEL DIREITO ===== */
+    .containerDash {
+        height: 55vh;
+    }
 
-.containerSite {
-    display: block !important;
-    width: 30% !important;
-    height: 100vh !important;
-}
 
-.containerSite .window {
-    display: block !important;
-    width: 100% !important;
-    height: 430px !important;
-    overflow: visible !important;
-}
+    .containerCards {
+        flex-direction: column;
+    }
 
-.painel-aviacao {
-    display: block !important;
-    width: 100% !important;
-    height: 430px !important;
-    padding: 35px !important;
-    box-sizing: border-box !important;
-    background: linear-gradient(135deg, #ffffff, #eef5fa) !important;
-    border-radius: 14px !important;
-}
 
-.painel-aviacao span {
-    font-size: 14px;
-    font-weight: bold;
-    color: #00a4d6;
-}
+    .card {
+        width: 95%;
 
-.painel-aviacao h1 {
-    margin: 12px 0;
-    font-size: 30px;
-    color: #17365d;
-}
+        max-width: none;
+    }
 
-.painel-aviacao p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555;
-}
 
-.btn-aviacao {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 22px;
-    background: #17365d;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+    .painel-aviacao {
+        padding: 20px;
+    }
+
+
+    .video-tucandeira {
+        height: 350px;
+    }
+
 }
