@@ -6,13 +6,10 @@
     <meta name="author" content="Ageu Nunes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Atualiza a página a cada 1 hora -->
+    <!-- Atualiza automaticamente a cada 1 hora -->
     <meta http-equiv="refresh" content="3600">
 
-    <!-- Ícone -->
     <link rel="icon" href="img/logo.png">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
     <title>Team PM - Painel</title>
@@ -22,183 +19,113 @@
         content="Painel Team PM - Projetos e Melhorias">
 </head>
 
+<body>
 
-<body background="img/wallpaper.png">
+    <div class="painel-principal">
 
-
-    <!-- ================================================= -->
-    <!-- ESTRUTURA PRINCIPAL -->
-    <!-- ================================================= -->
-
-    <div style="display: flex;">
-
-
-        <!-- ================================================= -->
+        <!-- ========================================= -->
         <!-- LADO ESQUERDO -->
-        <!-- ================================================= -->
+        <!-- ========================================= -->
 
         <div class="containerInfo">
 
-
-            <!-- ================================================= -->
-            <!-- DASHBOARD POWER BI -->
-            <!-- ================================================= -->
-
+            <!-- POWER BI -->
             <div class="containerDash">
 
-                <div class="window">
+                <div class="dashboard-window">
 
-                    <div class="dash dashboard-powerbi">
-
-
-                        <!-- POWER BI -->
-
-                        <div class="powerbi-container">
-
-                            <iframe
-                                title="Dashboard Salas Comerciais TECA"
-                                src="https://app.powerbi.com/reportEmbed?reportId=9a72b364-e104-4a43-91e1-af0e483eed91&autoAuth=true&ctid=c0fe1ff0-85b4-4fe4-bc97-38fad495b916"
-                                frameborder="0"
-                                allowfullscreen="true">
-                            </iframe>
-
-                        </div>
-
-
-                        <!-- BOTÃO PAINEL COMPLETO -->
-
-                        <div class="abrir-painel">
-
-                            <a
-                                href="https://vinciairportsbr.sharepoint.com/sites/PROJETOSEMELHORIA/SitePages/Painel-de-Projetos-e-Melhorias.aspx"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                Abrir painel completo ↗
-
-                            </a>
-
-                        </div>
-
-
-                    </div>
+                    <iframe
+                        class="powerbi-frame"
+                        title="Team PM - Foco da Semana"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiMDg1ZjJmNjMtNmEyZC00MmY2LWE0NDYtMDY1YzkyOTMwZjUzIiwidCI6ImMwZmUxZmYwLTg1YjQtNGZlNC1iYzk3LTM4ZmFkNDk1YjkxNiIsImMiOjl9&pageName=d7e7fdabbbe7e5996916"
+                        frameborder="0"
+                        allowfullscreen="true">
+                    </iframe>
 
                 </div>
 
             </div>
 
 
-            <!-- ================================================= -->
-            <!-- CARDS INFERIORES -->
-            <!-- ================================================= -->
+            <!-- ========================================= -->
+            <!-- CARDS -->
+            <!-- ========================================= -->
 
             <div class="containerCards">
-
-
-                <!-- CARD 1 -->
 
                 <img
                     src="img/card1.png"
                     class="card"
                     alt="Setembro Amarelo">
 
-
-                <!-- CARD 2 -->
-
                 <img
                     src="img/card2.png"
                     class="card"
                     alt="Aniversariantes do mês">
-
-
-                <!-- CARD 3 -->
 
                 <img
                     src="img/card3.png"
                     class="card"
                     alt="Dia Nacional de Luta da Pessoa com Deficiência">
 
-
             </div>
-
 
         </div>
 
 
-        <!-- ================================================= -->
+        <!-- ========================================= -->
         <!-- LADO DIREITO -->
-        <!-- ================================================= -->
+        <!-- ========================================= -->
 
         <div class="containerSite">
 
-
             <div class="window">
-
 
                 <div class="painel-aviacao">
 
-
-                    <!-- ================================================= -->
                     <!-- CABEÇALHO -->
-                    <!-- ================================================= -->
 
                     <div class="aviacao-cabecalho">
 
+                        <span>AVIAÇÃO</span>
 
-                        <span>
-                            AVIAÇÃO
-                        </span>
-
-
-                        <h1>
-                            Notícias da Aviação
-                        </h1>
-
+                        <h1>Notícias da Aviação</h1>
 
                         <p>
                             Últimas notícias e novidades do setor aéreo.
                         </p>
 
-
                     </div>
 
 
-                    <!-- ================================================= -->
-                    <!-- LISTA DE NOTÍCIAS -->
-                    <!-- ================================================= -->
+                    <!-- ========================================= -->
+                    <!-- NOTÍCIAS -->
+                    <!-- ========================================= -->
 
                     <div class="lista-noticias">
-
 
                         <!-- NOTÍCIA 1 -->
 
                         <a
                             class="noticia-aviacao"
-                            href="https://www.aeroflap.com.br/cat/noticias-da-aviacao/"
+                            href="https://www.aeroflap.com.br/"
                             target="_blank"
                             rel="noopener noreferrer">
 
-
-                            <span>
-                                NOTÍCIA
-                            </span>
-
+                            <span>NOTÍCIA</span>
 
                             <h3>
                                 Confira as principais notícias da aviação
                             </h3>
-
 
                             <p>
                                 Acompanhe as novidades do setor aéreo
                                 nacional e internacional.
                             </p>
 
-
                             <strong>
                                 Ver notícia →
                             </strong>
-
 
                         </a>
 
@@ -207,31 +134,24 @@
 
                         <a
                             class="noticia-aviacao"
-                            href="https://www.aeroflap.com.br/cat/noticias-da-aviacao/"
+                            href="https://www.aeroflap.com.br/"
                             target="_blank"
                             rel="noopener noreferrer">
 
-
-                            <span>
-                                DESTAQUE
-                            </span>
-
+                            <span>DESTAQUE</span>
 
                             <h3>
                                 Novidades dos aeroportos e companhias aéreas
                             </h3>
-
 
                             <p>
                                 Informações sobre aeroportos,
                                 empresas e operações.
                             </p>
 
-
                             <strong>
                                 Ver notícia →
                             </strong>
-
 
                         </a>
 
@@ -240,79 +160,36 @@
 
                         <a
                             class="noticia-aviacao"
-                            href="https://www.aeroflap.com.br/cat/noticias-da-aviacao/"
+                            href="https://www.aeroflap.com.br/"
                             target="_blank"
                             rel="noopener noreferrer">
 
-
-                            <span>
-                                ATUALIZAÇÃO
-                            </span>
-
+                            <span>ATUALIZAÇÃO</span>
 
                             <h3>
                                 Acompanhe o que acontece no setor aéreo
                             </h3>
 
-
                             <p>
-                                Notícias e acontecimentos da aviação
-                                em um só lugar.
+                                Notícias e acontecimentos
+                                da aviação em um só lugar.
                             </p>
-
 
                             <strong>
                                 Ver notícia →
                             </strong>
 
-
                         </a>
 
-
                     </div>
-
-
-                    <!-- ================================================= -->
-                    <!-- VÍDEO TUCANDEIRA -->
-                    <!-- ================================================= -->
-
-                    <div class="video-tucandeira">
-
-
-                        <video
-                            controls
-                            autoplay
-                            muted
-                            loop
-                            playsinline
-                            preload="auto">
-
-
-                            <source
-                                src="TUCANDEIRA.mp4"
-                                type="video/mp4">
-
-
-                            Seu navegador não suporta vídeo.
-
-
-                        </video>
-
-
-                    </div>
-
 
                 </div>
 
-
             </div>
-
 
         </div>
 
-
     </div>
-
 
 </body>
 
