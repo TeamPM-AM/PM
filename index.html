@@ -2,194 +2,80 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
     <meta name="author" content="Ageu Nunes">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Atualiza automaticamente a cada 1 hora -->
     <meta http-equiv="refresh" content="3600">
 
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="styles.css">
-
     <title>Team PM - Painel</title>
+    <meta name="description" content="Informações">
 
-    <meta
-        name="description"
-        content="Painel Team PM - Projetos e Melhorias">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <div class="painel-principal">
+    <main class="painel">
 
-        <!-- ========================================= -->
         <!-- LADO ESQUERDO -->
-        <!-- ========================================= -->
-
-        <div class="containerInfo">
+        <section class="containerInfo">
 
             <!-- POWER BI -->
             <div class="containerDash">
-
-                <div class="dashboard-window">
+                <div class="window">
 
                     <iframe
-                        class="powerbi-frame"
-                        title="Team PM - Foco da Semana"
+                        class="dash"
                         src="https://app.powerbi.com/view?r=eyJrIjoiMDg1ZjJmNjMtNmEyZC00MmY2LWE0NDYtMDY1YzkyOTMwZjUzIiwidCI6ImMwZmUxZmYwLTg1YjQtNGZlNC1iYzk3LTM4ZmFkNDk1YjkxNiIsImMiOjl9&pageName=d7e7fdabbbe7e5996916"
                         frameborder="0"
                         allowfullscreen="true">
                     </iframe>
 
                 </div>
-
             </div>
 
 
-            <!-- ========================================= -->
             <!-- CARDS -->
-            <!-- ========================================= -->
-
             <div class="containerCards">
 
                 <img
                     src="img/card1.png"
                     class="card"
-                    alt="Setembro Amarelo">
+                    alt="Outubro Rosa">
 
                 <img
                     src="img/card2.png"
                     class="card"
-                    alt="Aniversariantes do mês">
+                    alt="Aniversariantes de Outubro">
 
                 <img
                     src="img/card3.png"
                     class="card"
-                    alt="Dia Nacional de Luta da Pessoa com Deficiência">
+                    alt="2 de Outubro">
 
             </div>
 
-        </div>
+        </section>
 
 
-        <!-- ========================================= -->
-        <!-- LADO DIREITO -->
-        <!-- ========================================= -->
-
-        <div class="containerSite">
+        <!-- NOTÍCIAS DA AVIAÇÃO -->
+        <aside class="containerSite">
 
             <div class="window">
 
-                <div class="painel-aviacao">
-
-                    <!-- CABEÇALHO -->
-
-                    <div class="aviacao-cabecalho">
-
-                        <span>AVIAÇÃO</span>
-
-                        <h1>Notícias da Aviação</h1>
-
-                        <p>
-                            Últimas notícias e novidades do setor aéreo.
-                        </p>
-
-                    </div>
-
-
-                    <!-- ========================================= -->
-                    <!-- NOTÍCIAS -->
-                    <!-- ========================================= -->
-
-                    <div class="lista-noticias">
-
-                        <!-- NOTÍCIA 1 -->
-
-                        <a
-                            class="noticia-aviacao"
-                            href="https://www.aeroflap.com.br/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            <span>NOTÍCIA</span>
-
-                            <h3>
-                                Confira as principais notícias da aviação
-                            </h3>
-
-                            <p>
-                                Acompanhe as novidades do setor aéreo
-                                nacional e internacional.
-                            </p>
-
-                            <strong>
-                                Ver notícia →
-                            </strong>
-
-                        </a>
-
-
-                        <!-- NOTÍCIA 2 -->
-
-                        <a
-                            class="noticia-aviacao"
-                            href="https://www.aeroflap.com.br/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            <span>DESTAQUE</span>
-
-                            <h3>
-                                Novidades dos aeroportos e companhias aéreas
-                            </h3>
-
-                            <p>
-                                Informações sobre aeroportos,
-                                empresas e operações.
-                            </p>
-
-                            <strong>
-                                Ver notícia →
-                            </strong>
-
-                        </a>
-
-
-                        <!-- NOTÍCIA 3 -->
-
-                        <a
-                            class="noticia-aviacao"
-                            href="https://www.aeroflap.com.br/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            <span>ATUALIZAÇÃO</span>
-
-                            <h3>
-                                Acompanhe o que acontece no setor aéreo
-                            </h3>
-
-                            <p>
-                                Notícias e acontecimentos
-                                da aviação em um só lugar.
-                            </p>
-
-                            <strong>
-                                Ver notícia →
-                            </strong>
-
-                        </a>
-
-                    </div>
-
-                </div>
+                <iframe
+                    class="site"
+                    src="https://www.aeroflap.com.br/cat/noticias-da-aviacao/"
+                    frameborder="0"
+                    scrolling="no"
+                    allowfullscreen>
+                </iframe>
 
             </div>
 
-        </div>
+        </aside>
 
-    </div>
+    </main>
 
 </body>
 
