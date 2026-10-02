@@ -131,23 +131,24 @@ body {
 }
 
 /* ============================= */
-/* COLUNA VEJA MAIS */
+/* VEJA MAIS - AMPLIADO */
 /* ============================= */
 
 .site {
     display: block;
     position: absolute;
+
     width: 1600px;
     height: 1800px;
 
-    top: -325px;
-    left: -1065px;
+    top: -355px;
+    left: -1170px;
 
     margin: 0;
     padding: 0;
     border: 0;
 
-    transform: scale(1);
+    transform: scale(1.10);
     transform-origin: top left;
 }
 
@@ -156,6 +157,7 @@ body {
 /* ============================= */
 
 @media (max-width: 1000px) {
+
     .painel {
         gap: 6px;
         padding: 5px;
