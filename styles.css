@@ -139,16 +139,14 @@ body {
     width: 1600px;
     height: 1800px;
 
-    /* POSIÇÃO DAS NOTÍCIAS */
     top: -225px;
-    left: -945px;
+    left: -900px;
 
     margin: 0;
     padding: 0;
     border: 0;
 
-    /* AMPLIAÇÃO */
-    transform: scale(0.94);
+    transform: scale(0.90);
     transform-origin: top left;
 }
 
