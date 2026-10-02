@@ -1,6 +1,6 @@
 
 /* ============================= */
-/* RESET */
+/* CONFIGURAÇÕES GERAIS */
 /* ============================= */
 
 *,
@@ -19,7 +19,9 @@ body {
 }
 
 body {
-    background: url("img/wallpaper.png") no-repeat center center fixed;
+    background: url("img/wallpaper.png")
+        no-repeat center center fixed;
+
     background-size: cover;
     font-family: Arial, sans-serif;
 }
@@ -44,43 +46,57 @@ body {
     width: 72%;
     min-width: 0;
     height: 100%;
+
     display: flex;
     flex-direction: column;
+
     gap: 10px;
     overflow: hidden;
 }
 
 /* ============================= */
-/* DASHBOARD */
+/* DASHBOARD COMO IMAGEM */
 /* ============================= */
 
 .containerDash {
     width: 100%;
     height: 67%;
     min-height: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     overflow: hidden;
 }
 
 .containerDash .window {
     width: 100%;
     height: 100%;
+
     position: relative;
     overflow: hidden;
+
     border-radius: 15px;
-    background: #fff;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+    background: #ffffff;
+
+    box-shadow:
+        3px 3px 5px rgba(0, 0, 0, 0.20);
 }
 
 .dash {
     display: block;
     position: absolute;
-    width: 100%;
-    height: calc(100% + 65px);
+
     top: 0;
     left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
     margin: 0;
     padding: 0;
     border: 0;
@@ -94,19 +110,28 @@ body {
     width: 100%;
     height: 33%;
     min-height: 0;
+
     display: flex;
     gap: 10px;
+
     justify-content: space-between;
     align-items: stretch;
+
     overflow: hidden;
 }
 
 .card {
     width: calc((100% - 20px) / 3);
     height: 100%;
-    object-fit: cover;
+
+    object-fit: contain;
+    object-position: center;
+
+    background: #ffffff;
     border-radius: 15px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+
+    box-shadow:
+        3px 3px 5px rgba(0, 0, 0, 0.20);
 }
 
 /* ============================= */
@@ -123,14 +148,20 @@ body {
 .containerSite .window {
     width: 100%;
     height: 100%;
+
     position: relative;
     overflow: hidden;
+
     border-radius: 15px;
     background: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+
+    box-shadow:
+        3px 3px 5px rgba(0, 0, 0, 0.20);
 }
 
-/* COLUNA VEJA MAIS */
+/* ============================= */
+/* VEJA MAIS - CONFIGURAÇÃO TV */
+/* ============================= */
 
 .site {
     display: block;
@@ -139,14 +170,14 @@ body {
     width: 1600px;
     height: 1800px;
 
-    top: -225px;
-    left: -900px;
+    top: -390px;
+    left: -1350px;
 
     margin: 0;
     padding: 0;
     border: 0;
 
-    transform: scale(0.90);
+    transform: scale(1.25);
     transform-origin: top left;
 }
 
