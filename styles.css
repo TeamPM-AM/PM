@@ -51,7 +51,7 @@ body {
 }
 
 /* ============================= */
-/* DASHBOARD - CONFIGURAÇÃO ORIGINAL */
+/* DASHBOARD */
 /* ============================= */
 
 .containerDash {
@@ -139,14 +139,16 @@ body {
     width: 1600px;
     height: 1800px;
 
-    top: -275px;
-    left: -1040px;
+    /* POSIÇÃO DAS NOTÍCIAS */
+    top: -225px;
+    left: -945px;
 
     margin: 0;
     padding: 0;
     border: 0;
 
-    transform: scale(1.02);
+    /* AMPLIAÇÃO */
+    transform: scale(0.94);
     transform-origin: top left;
 }
 
