@@ -29,83 +29,105 @@ body {
 /* ============================= */
 
 .painel {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+
     display: flex;
     gap: 10px;
-    padding: 8px;
-}
+    padding: 5px;
 
-/* ============================= */
-/* POWER BI E CARDS */
-/* ============================= */
-
-.containerInfo {
-    width: 72%;
-    min-width: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     overflow: hidden;
 }
 
 /* ============================= */
-/* POWER BI */
+/* LADO ESQUERDO */
+/* ============================= */
+
+.containerInfo {
+    width: 72%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* ============================= */
+/* DASHBOARD */
 /* ============================= */
 
 .containerDash {
     width: 100%;
-    height: 67%;
-    min-height: 0;
+    height: 66%;
+
+    flex-shrink: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     overflow: hidden;
 }
 
 .containerDash .window {
     width: 100%;
     height: 100%;
+
     position: relative;
     overflow: hidden;
+
     border-radius: 15px;
-    background: #fff;
+    background: #f3f4f8;
+
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
 }
 
+/* IMAGEM DO DASHBOARD */
+
 .dash {
     display: block;
-    position: absolute;
+
     width: 100%;
-    height: calc(100% + 65px);
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
     border: 0;
+    margin: 0;
 }
 
 /* ============================= */
-/* CARDS DE OUTUBRO */
+/* CARDS */
 /* ============================= */
 
 .containerCards {
     width: 100%;
-    height: 33%;
-    min-height: 0;
+    height: calc(34% - 10px);
+
     display: flex;
     gap: 10px;
+
     justify-content: space-between;
     align-items: stretch;
+
     overflow: hidden;
 }
 
 .card {
     width: calc((100% - 20px) / 3);
     height: 100%;
-    object-fit: cover;
+
+    min-width: 0;
+
+    object-fit: contain;
+    object-position: center;
+
     border-radius: 15px;
+
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
 }
 
@@ -115,41 +137,39 @@ body {
 
 .containerSite {
     width: 28%;
-    min-width: 0;
     height: 100%;
+
+    min-width: 0;
     overflow: hidden;
 }
 
 .containerSite .window {
     width: 100%;
     height: 100%;
+
     position: relative;
     overflow: hidden;
+
     border-radius: 15px;
     background: white;
+
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
 }
 
-/* ============================= */
-/* VEJA MAIS - NOVA AMPLIAÇÃO */
-/* ============================= */
+/* ENQUADRAMENTO DAS NOTÍCIAS */
 
 .site {
     display: block;
-    position: absolute;
 
     width: 1600px;
-    height: 1800px;
+    height: 500%;
 
-    top: -390px;
-    left: -1350px;
-
-    margin: 0;
-    padding: 0;
     border: 0;
 
-    transform: scale(1.25);
-    transform-origin: top left;
+    margin-left: -1040px;
+    margin-top: -400px;
+
+    zoom: 1.20;
 }
 
 /* ============================= */
@@ -165,6 +185,7 @@ body {
 
     .containerInfo {
         width: 72%;
+        gap: 6px;
     }
 
     .containerSite {
@@ -173,6 +194,7 @@ body {
 
     .containerCards {
         gap: 6px;
+        height: calc(34% - 6px);
     }
 
     .card {
